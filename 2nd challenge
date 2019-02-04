@@ -1,0 +1,13 @@
+str = "This is the ultimate string"
+word = input("word?")
+length=len(str)
+index = str.find(word)
+str2=str[index:length]
+space=str2.find(' ')
+wordlen = space + index
+space2 = wordlen-index
+newfullword = str[space2:length]
+print(newfullword)
+print(index)
+fullword= str[index:wordlen]
+print(fullword)
